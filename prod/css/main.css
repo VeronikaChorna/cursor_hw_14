@@ -347,18 +347,18 @@ button {
     justify-content: center;
 }
 
-.reasons .reason .square img {
+.reasons .reason .square .icon {
     width: 45px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.reasons .reason .square img.width60 {
+.reasons .reason .square .icon1 {
     width: 60px;
 }
 
-.reasons .reason .square img.width35 {
+.reasons .reason .square .icon3  {
     width: 35px;
 }
 
