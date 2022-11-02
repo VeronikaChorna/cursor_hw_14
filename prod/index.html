@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <title>Title</title>
 </head>
 <body>
@@ -382,7 +383,6 @@
 <section class="reviews">
     <div class="wrapper">
         <h2 class="h2">відгуки про наш <span class="yellow">відеопартронік</span></h2>
-        <img src="img/arrow-left.png" alt="arrow-left" class="arrow-left">
         <div class="review-slider">
             <div class="slide">
                 <img src="img/review1.webp" alt="review" class="main-review-img">
@@ -392,8 +392,31 @@
                 <div class="review-author"><img src="img/review-ava1.webp" alt="" class="ava"><b>Костянтин</b><i>м.
                     Дніпропетровськ</i></div>
             </div>
+
+            <div class="slide">
+                <img src="img/review1.webp" alt="review" class="main-review-img">
+                <p class="review-text">
+                    Знову довгі ночі в інтернеті в пошуках оглядів і порівнянь… Проблема таких пристроїв що у них або дизайн потворний величезний — у півтора рази більше штатного, а я взагалі не люблю заднє дзеркало, тому що за 3 роки керування робочими "каблучками" типу Кангу та Берлінго взагалі звик без нього обходиться, чи тих. дані ніякі - камери дуже поганої якості ... Вже думав що смуток ... : (Але за пару днів пошуків наткнувся на те про що мріяв дійсно - HD Recorder. Знайшов його в одного з драйвечан, і в інших. Все в захваті від цього пристрою. Якість відео дуже хороша, в машині не видно його взагалі, кріплення на штатне люстерко будь-якої машини, що лікар прописав!
+                </p>
+                <div class="review-author"><img src="img/review-ava1.webp" alt="" class="ava"><b>Костянтин</b><i>м.
+                    Дніпропетровськ</i></div>
+            </div>
+
+            <div class="slide">
+                <img src="img/review1.webp" alt="review" class="main-review-img">
+                <p class="review-text">
+                    Знову довгі ночі в інтернеті в пошуках оглядів і порівнянь… Проблема таких пристроїв що у них або дизайн потворний величезний — у півтора рази більше штатного, а я взагалі не люблю заднє дзеркало, тому що за 3 роки керування робочими "каблучками" типу Кангу та Берлінго взагалі звик без нього обходиться, чи тих. дані ніякі - камери дуже поганої якості ... Вже думав що смуток ... : (Але за пару днів пошуків наткнувся на те про що мріяв дійсно - HD Recorder. Знайшов його в одного з драйвечан, і в інших. Все в захваті від цього пристрою. Якість відео дуже хороша, в машині не видно його взагалі, кріплення на штатне люстерко будь-якої машини, що лікар прописав!
+                </p>
+                <div class="review-author"><img src="img/review-ava1.webp" alt="" class="ava"><b>Костянтин</b><i>м.
+                    Дніпропетровськ</i></div>
+            </div>
         </div>
-        <img src="img/arrow-right.png" alt="arrow-right" class="arrow-right">
+        <div class="paginator-center text-color text-center">
+            <ul>
+                <li class="prev"><img src="img/arrow-left.png" alt="arrow-left" class="arrow-left"></li>
+                <li class="next"><img src="img/arrow-right.png" alt="arrow-right" class="arrow-right"></li>
+            </ul>
+        </div>
     </div>
 </section>
 <section class="delivery">
@@ -478,6 +501,19 @@
 
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+$('.review-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  arrows: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next')
+});
+</script>
+
 <script src="lib/plugins.js"></script>
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
