@@ -532,6 +532,10 @@ button {
     clear: both;
 }
 
+.advantages .icon {
+    width: 55px;
+}
+
 .advantages .adv-title {
     margin-top: 15px;
     font-family: "HelveticaNeueBold";
